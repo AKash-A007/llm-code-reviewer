@@ -1,0 +1,14 @@
+[
+    {
+        "code": "https://github.com/unclecode/crawl4ai/pull/915.diff",
+        "review": "## Pull Request Overview\n\nThis PR addresses an issue with the CSS selector not matching elements correctly by switching from querySelector to querySelectorAll and concatenating the outerHTML of all matched elements.  \n- Changed the JavaScript snippet from returning a single element\u2019s outerHTML to joining the outerHTML of all matching elements.  \n- Updated the selector quotes to double quotes to avoid conflicts with single quotes inside the selector.\n\n\n<details>\n<summary>Comments suppressed due to low confidence (1)</summary>\n\n**crawl4ai/async_crawler_strategy.py:824**\n* If the selector string contains double quotes, it may break the JavaScript snippet. Consider escaping double quotes in the selector or validating its content.\n```\nf\"\"\"Array.from(document.querySelectorAll(\"{selector}\")).map(el => el.outerHTML).join('')\"\"\"\n```\n</details>\n\n"
+    },
+    {
+        "code": "https://github.com/unclecode/crawl4ai/pull/821.diff",
+        "review": "Nice detective work!\r\nDoes crawl4ai have any automated CI/CD to run tests?"
+    },
+    {
+        "code": "https://github.com/unclecode/crawl4ai/pull/788.diff",
+        "review": "Sorry. I can't delete this commit "
+    }
+]
